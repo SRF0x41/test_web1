@@ -1,0 +1,61 @@
+/* Imported Elements */
+
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.banner {
+  background-color: black;
+  /* Keep background color */
+  color: white;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  display: flex;
+  /* Use flexbox */
+  align-items: left;
+  /* Align items vertically */
+  justify-content: left;
+  /* Center the text */
+  gap: 15px;
+  /* Adds space between the logo and text */
+}
+
+.banner h1 {
+  font-family: "STIX Two Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  /* Adjust weight as needed (400-700) */
+  font-style: normal;
+  color: white;
+  /* Optional: Change text color */
+}
+
+.banner-logo {
+  width: 100px;
+  /* Adjust size as needed */
+  height: auto;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #61dafb; /* Highlight on hover */
+}
