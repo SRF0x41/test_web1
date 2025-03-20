@@ -1,148 +1,154 @@
-/* Imported Elements */
-
+/* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
+/* Global Styles */
 .App {
-  text-align: center;
-  font-family: "STIX Two Text", serif;
+  text-align: center; /* Centers text */
+  font-family: "STIX Two Text", serif; /* Sets the font for the app */
   background-color: #f4f4f4;  /* Light gray background for the entire app */
   color: #333;  /* Dark gray text for better readability */
 }
 
+/* Banner Styles (Top Bar) */
 .banner {
-  background-color: #333; /* Dark gray for the banner */
-  color: white;
-  padding: 30px;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  box-sizing: border-box;
-  overflow: hidden;
+  background-color: #333; /* Dark gray background for the banner */
+  color: white; /* White text */
+  padding: 30px; /* Adds space inside the banner */
+  position: sticky; /* Keeps banner fixed at the top */
+  top: 0; /* Sticks to the top of the page */
+  width: 100%; /* Full width */
+  z-index: 10; /* Ensures the banner stays on top */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Spaces out logo and nav links */
+  gap: 15px; /* Space between items */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+  overflow: hidden; /* Prevents overflowing content */
 }
 
+/* Banner Logo and Heading */
 .banner-left {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  display: flex; /* Flexbox for logo and heading */
+  align-items: center; /* Vertically aligns logo and heading */
+  gap: 15px; /* Space between logo and heading */
 }
 
 .banner h1 {
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
-  margin: 0;
+  font-optical-sizing: auto; /* Adjust font size based on screen size */
+  font-size: 250%; /* Font size for the title */
+  font-weight: 400; /* Normal weight */
+  font-style: normal; /* Normal font style */
+  color: white; /* White text color */
+  margin: 0; /* Removes default margin */
 }
 
 .banner-logo {
-  width: 100px;
-  height: auto;
+  width: 100px; /* Sets logo width */
+  height: auto; /* Keeps aspect ratio */
 }
 
+/* Navigation Links */
 .nav-links {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  display: flex; /* Flexbox for navigation links */
+  gap: 15px; /* Space between links */
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  font-size: x-large; /* Larger text for navigation links */
 }
 
 .nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  white-space: nowrap;
+  color: white; /* White text */
+  text-decoration: none; /* Removes underlining */
+  font-weight: bold; /* Bold text */
+  padding: 5px 10px; /* Adds padding to links */
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
 .nav-links a:hover {
-  color: #f44336; /* Soft red on hover */
+  color: #f44336; /* Red color on hover */
 }
 
-
-
-/* Home portrait */
+/* Home Portrait Section */
 .home-portrait {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  display: flex; /* Flexbox for horizontal layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Spaces out image and text */
+  width: 100%; /* Full width */
 }
 
+/* Home Portrait Image Styles */
 .home-portrait-image-container {
-  flex: 1;
-  height: 100%;
+  flex: 1; /* Take up half the width */
+  height: 100%; /* Full height */
 }
 
 .home-portrait-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensures the image fills its container without distortion */
 }
 
+/* Home Portrait Text Styles */
 .home-portrait-text {
-  flex: 1;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
+  flex: 1; /* Take up half the width */
+  padding: 40px; /* Adds space around the text */
+  display: flex; /* Flexbox for vertical alignment */
+  flex-direction: column; /* Stacks text vertically */
+  justify-content: center; /* Centers text vertically */
+  text-align: left; /* Left-aligns text */
   background-color: #ffffff;  /* Off-white background for a light contrast */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Slight shadow for a soft look */
 }
 
 .home-portrait-text h2 {
-  font-size: 2.5rem;
-  color: #333; /* Dark gray for the heading */
-  margin-bottom: 15px;
+  font-size: 2.5rem; /* Font size for the heading */
+  color: #333; /* Dark gray color */
+  margin-bottom: 15px; /* Adds space below the heading */
 }
 
 .home-portrait-text p {
-  font-size: 1.1rem;
+  font-size: 1.1rem; /* Font size for paragraph */
   color: #555; /* Medium gray for text */
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Adds space below the paragraph */
 }
 
-
+/* Footer Styles */
 .footer {
-  background-color: #2e2e2e; /* Darker background */
-  color: white;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
+  background-color: #2e2e2e; /* Darker background for footer */
+  color: white; /* White text */
+  padding: 20px; /* Adds space inside the footer */
+  text-align: center; /* Centers the text */
+  position: relative; /* Ensures proper positioning */
+  bottom: 0; /* Sticks to the bottom of the page */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width */
 }
 
+/* Footer Content Wrapper */
 .footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; /* Max width for the footer content */
+  margin: 0 auto; /* Centers the content */
 }
 
+/* Footer Text Styles */
 .footer p {
-  margin-bottom: 10px;
-  font-size: 1rem;
+  margin-bottom: 10px; /* Adds space below the paragraph */
+  font-size: 1rem; /* Font size for text in footer */
 }
 
+/* Social Links */
 .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  display: flex; /* Flexbox for social links */
+  justify-content: center; /* Centers the social links */
+  gap: 20px; /* Space between links */
 }
 
 .social-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
+  color: white; /* White text */
+  text-decoration: none; /* Removes underlining */
+  font-weight: bold; /* Bold text */
+  font-size: 1.1rem; /* Font size for social media links */
 }
 
 .social-links a:hover {
   color: #d3d3d3; /* Light hover effect */
 }
-
