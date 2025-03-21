@@ -67,7 +67,6 @@ function Home() {
       </div>
       {/* Services and Photo Gallery section */}
       <Services />
-      <PhotoGallery />
     </>
   );
 }

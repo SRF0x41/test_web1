@@ -1,12 +1,20 @@
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
+/* Main content wrapper */
+main {
+  flex: 1; /* This allows the main content to take up all available space */
+}
+
 /* Global Styles */
 .App {
   text-align: center; /* Centers text */
   font-family: "STIX Two Text", serif; /* Sets the font for the app */
   background-color: #f4f4f4;  /* Light gray background for the entire app */
   color: #333;  /* Dark gray text for better readability */
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* Banner Styles (Top Bar) */
@@ -110,45 +118,43 @@
   color: #555; /* Medium gray for text */
   margin-bottom: 10px; /* Adds space below the paragraph */
 }
-
 /* Footer Styles */
 .footer {
-  background-color: #2e2e2e; /* Darker background for footer */
-  color: white; /* White text */
-  padding: 20px; /* Adds space inside the footer */
-  text-align: center; /* Centers the text */
-  position: relative; /* Ensures proper positioning */
-  bottom: 0; /* Sticks to the bottom of the page */
-  width: 100%; /* Full width */
-  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
 }
 
 /* Footer Content Wrapper */
 .footer-content {
-  max-width: 1200px; /* Max width for the footer content */
-  margin: 0 auto; /* Centers the content */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Footer Text Styles */
 .footer p {
-  margin-bottom: 10px; /* Adds space below the paragraph */
-  font-size: 1rem; /* Font size for text in footer */
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 /* Social Links */
 .social-links {
-  display: flex; /* Flexbox for social links */
-  justify-content: center; /* Centers the social links */
-  gap: 20px; /* Space between links */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .social-links a {
-  color: white; /* White text */
-  text-decoration: none; /* Removes underlining */
-  font-weight: bold; /* Bold text */
-  font-size: 1.1rem; /* Font size for social media links */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .social-links a:hover {
-  color: #d3d3d3; /* Light hover effect */
+  color: #d3d3d3;
 }
