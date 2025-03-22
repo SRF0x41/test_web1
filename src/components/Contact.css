@@ -2,53 +2,98 @@
 .contact-container {
     padding: 30px;
     background-color: #f4f4f4;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 2rem;
     color: #333;
     text-align: center;
-  }
-  
-  p {
-    text-align: center;
-    font-size: 1rem;
     margin-bottom: 20px;
+}
+
+/* Contact Info and Form Side by Side */
+.contact-content {
+    display: flex;
+    justify-content: space-between; /* Spaces out the two sections */
+    align-items: flex-start; /* Align items at the top */
+    gap: 40px; /* Space between sections */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1; /* Takes up half the space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info h3 {
+    font-size: 1.2rem;
     color: #555;
-  }
-  
-  .contact-form {
+    margin-top: 15px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Email Form */
+.email-container {
+    flex: 1; /* Takes up half the space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+/* Form Fields */
+.contact-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-  }
-  
-  .form-field {
+    gap: 15px;
+}
+
+.form-field {
     display: flex;
     flex-direction: column;
-  }
-  
-  .form-field label {
+}
+
+.form-field label {
     font-size: 1.1rem;
     color: #333;
     margin-bottom: 5px;
-  }
-  
-  .form-field input, .form-field textarea {
+}
+
+.form-field input,
+.form-field textarea {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  .form-field textarea {
+    width: 100%;
+}
+
+.form-field textarea {
     resize: vertical;
-    height: 150px;
-  }
-  
-  .submit-btn {
+    height: 120px;
+}
+
+/* Submit Button */
+.submit-btn {
     padding: 12px;
     font-size: 1.1rem;
     color: white;
@@ -56,9 +101,15 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .submit-btn:hover {
+}
+
+.submit-btn:hover {
     background-color: #f44336;
-  }
-  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+}

@@ -60,7 +60,7 @@ main {
   display: flex; /* Flexbox for navigation links */
   gap: 15px; /* Space between links */
   flex-wrap: wrap; /* Allows wrapping on small screens */
-  font-size: x-large; /* Larger text for navigation links */
+  font-size: large; /* Larger text for navigation links */
 }
 
 .nav-links a {
