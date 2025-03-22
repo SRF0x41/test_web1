@@ -30,7 +30,7 @@ main {
   align-items: center; /* Align items vertically */
   justify-content: space-between; /* Spaces out logo and nav links */
   gap: 15px; /* Space between items */
-  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+  box-sizing: border-box; /* Ensures padding is included in the eaAlement's total width */
   overflow: hidden; /* Prevents overflowing content */
 }
 
@@ -80,7 +80,7 @@ main {
   display: flex; /* Flexbox for horizontal layout */
   align-items: center; /* Align items vertically */
   justify-content: space-between; /* Spaces out image and text */
-  width: 100%; /* Full width */
+  width: 80%; /* Full width */
 }
 
 /* Home Portrait Image Styles */
@@ -157,4 +157,16 @@ main {
 
 .social-links a:hover {
   color: #d3d3d3;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+      flex-direction: column;
+      display: flex;
+      align-items: center; /* Centers content */
+  }
+
 }

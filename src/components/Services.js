@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css';  // Import the CSS for the Services page
+import exterior_stain from '../images/IMG_1445.jpeg'
 
 function Services() {
   return (
@@ -9,6 +10,7 @@ function Services() {
         <div className="service-block">
           <h2>Exterior Painting and Staining</h2>
           <p>We provide durable painting and staining for the exterior of your home. Our services help protect your property from weather damage while improving its appearance.</p>
+          <img src={exterior_stain}></img>
         </div>
         <div className="service-block">
           <h2>Interior Painting</h2>

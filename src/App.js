@@ -7,7 +7,7 @@ import Services from './components/Services.js';
 import PhotoGallery from './components/PhotoGallery.js';
 
 // Import images
-import home_portrait from './images/stock_image_vail1.jpg';
+import home_portrait from './images/IMG_0969.jpeg';
 
 function Layout() {
   return (

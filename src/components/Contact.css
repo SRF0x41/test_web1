@@ -16,48 +16,31 @@ h1 {
 /* Contact Info and Form Side by Side */
 .contact-content {
     display: flex;
-    justify-content: space-between; /* Spaces out the two sections */
-    align-items: flex-start; /* Align items at the top */
-    gap: 40px; /* Space between sections */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center align both sections */
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px; /* Ensures equal spacing on both sides */
 }
 
 /* Contact Info */
 .contact-info {
-    flex: 1; /* Takes up half the space */
-    background-color: #fff;
+    flex: 1;
+    max-width: 50%; /* Ensures equal width */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     min-width: 300px;
-}
-
-.contact-info h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.contact-info h3 {
-    font-size: 1.2rem;
-    color: #555;
-    margin-top: 15px;
-}
-
-.contact-info p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensures padding is included in total width */
 }
 
 /* Email Form */
 .email-container {
-    flex: 1; /* Takes up half the space */
-    background-color: #fff;
+    flex: 1;
+    max-width: 50%; /* Ensures equal width */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     min-width: 300px;
+    box-sizing: border-box; /* Ensures padding is included in total width */
 }
 
 /* Form Fields */
@@ -70,6 +53,7 @@ h1 {
 .form-field {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .form-field label {
@@ -111,5 +95,10 @@ h1 {
 @media (max-width: 768px) {
     .contact-content {
         flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    .contact-info,
+    .email-container {
+        max-width: 100%; /* Make both full width on small screens */
     }
 }
